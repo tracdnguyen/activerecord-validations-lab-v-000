@@ -7,10 +7,7 @@ class Post < ActiveRecord::Base
   validate :is_clickbait?
 
   CLICKBAIT_PATTERNS = [
-    /Won't Believe/i,
-    /Secret/i,
-    /Top [0-9]*/i,
-    /Guess/i
+    "Guess"
   ]
 
   def is_clickbait?
